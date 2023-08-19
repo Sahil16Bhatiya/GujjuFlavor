@@ -1,0 +1,151 @@
+<!doctype hbs>
+<hbs lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Singup</title>
+  </head>
+  <body>
+
+  <section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form - GujjuFlavor</h3>
+            <form action="/signup" method="post" >
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    
+                    <label class="form-label" for="firstName">First Name (username)</label>
+                    <input type="text" name="name" class="form-control" id="username" id="firstName" required>
+        
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                        <label class="form-label" for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lname" class="form-control form-control-lg" required/>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                  <div class="form-outline datepicker w-100">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control form-control-lg" id="password" required/>
+                    
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <h6 class="mb-2 pb-1">Gender: </h6>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                      value="Female" checked />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="maleGender"
+                      value="Male" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="otherGender"
+                      value="Other" />
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <label class="form-label" for="emailAddress">Email</label>
+                    <input type="email" name="email" id="emailAddress" class="form-control form-control-lg" required/>
+                    
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <label class="form-label" for="phoneNumber">Mobile Number</label>
+                    <input type="tel" name="mobile" id="phoneNumber" class="form-control form-control-lg" required />
+                    
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                   <label class="form-label select-label">Choose option</label>
+
+                  <select class="select form-control-lg" name="state">
+                    <option value="1" disabled>Choose option</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                  </select>
+                 
+
+                </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+              </div>
+
+                   <a href="/login">Already have a Account</a>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+    
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</hbs>
+
+
+      

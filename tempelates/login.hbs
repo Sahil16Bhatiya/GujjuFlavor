@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Login -GujjuFlavor</title>
+    <style type="text/css">
+   
+ 
+.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s;
+    border-radius: 10px;
+}
+.card{
+  background-color: #ADD9B7;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-control{
+    width: 130px;
+  }
+}
+
+
+
+    </style>
+    
+
+  </head>
+  <body>
+  
+
+  <section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-11">
+        <div class="card shadow-2-strong card-Login" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Login Form</h3>
+            
+            <form action="/login" method="post" >
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label class="form-label" for="firstName">User Name</label>
+                    <input type="text" name="name" class="form-control" id="username" id="firstName" required>
+                  </div>
+              </div>
+              </div>
+            
+
+                  
+                 <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                     <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" required />
+                  </div>
+                  </div>
+                  </div>
+
+                   <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+
+              </div> 
+              
+                <a href="/signup">Create New Account</a>
+
+               </form>
+
+            
+
+               <div class="background-image">
+              
+               </div>
+               
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <script>
+        const images = [
+    'https://mir-s3-cdn-cf.behance.net/project_modules/1400/ec12b440211349.57766816eed8e.gif',
+    'https://i.pinimg.com/originals/69/f6/5d/69f65d92d62da41f90a91dfbe0e330fc.gif',
+    'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/597f3f40211349.5776664fd3c69.gif',
+    'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/637c8140211349.57764cc62418d.gif',
+    'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2f807f40211349.577654f76f54b.gif',
+    'https://mir-s3-cdn-cf.behance.net/project_modules/1400/51904440211349.577660fba593e.gif'
+];
+
+function getRandomImage() {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    return images[randomIndex];
+}
+
+function changeBackgroundImage() {
+    const backgroundImage = document.querySelector('.background-image');
+    backgroundImage.style.backgroundImage = `url(${getRandomImage()})`;
+}
+
+window.addEventListener('load', changeBackgroundImage);
+
+    </script>
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+   
