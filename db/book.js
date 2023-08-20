@@ -30,6 +30,10 @@ const bookTableSchema = new mongoose.Schema({
       type: Date,
       required: true // Change to false if date is not mandatory
     },
+    city: {
+      type: String,
+      required: true
+    },
     time: {
       type: String,
       required: true // Change to false if time is not mandatory

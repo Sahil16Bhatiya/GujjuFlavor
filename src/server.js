@@ -116,6 +116,7 @@ app.post('/contact', async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         mobile: req.body.mobile,
+        city:req.body.city,
         date: req.body.date,
         time: req.body.time,
         people: req.body.people,
@@ -135,7 +136,7 @@ app.post('/contact', async (req, res) => {
  }
  
      res.status(201).render("contact", {
-         done: req.body.name + "Table is Booked Succesfully"
+         done: req.body.name + "  Table is Booked Succesfully - More Information GujjuFlavor send FROM Email"
      })
  })
  
